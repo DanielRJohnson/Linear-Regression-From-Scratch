@@ -22,7 +22,7 @@ def main():
     lr = LinRegModel(X.shape[1])
 
     #train it
-    J_Hist = lr.train(X, y, maxIters = 1 * (10**3), alpha = 1 * (10**-5), convergenceThreshold = 1 * (10**-5) )
+    J_Hist = lr.train(X, y, maxIters = 1 * (10**3), alpha = 1 * (10**-3), convergenceThreshold = 1 * (10**-5) )
 
     #draw it
     draw(lr, X, y, J_Hist, bool3D=True)
